@@ -14,10 +14,13 @@ syntax match cNiceOperator "<=" conceal cchar=≤
 syntax match cNiceOperator "&&" conceal cchar=∧
 syntax match cNiceOperator "||" conceal cchar=∨
 
-syntax match cNiceOperator "<<" conceal cchar=≺
-syntax match cNiceOperator ">>" conceal cchar=≻
-
+syntax match cNiceOperator "<<" conceal cchar=≪
+syntax match cNiceOperator ">>" conceal cchar=≫
+syntax match cNiceOperator "+=" conceal cchar=⩲
 syntax match cNiceOperator "->" conceal cchar=➞
+
+syntax match cStatement "#include" conceal cchar=𝕀
+syntax match cStatement "#pragma" conceal cchar=ℙ
 
 syntax keyword cStructure enum conceal cchar=∈
 syntax keyword cStructure union conceal cchar=⋃
@@ -40,6 +43,3 @@ syntax keyword cType float double conceal cchar=ℝ
 
 hi link cNiceOperator Operator
 hi! link Conceal Operator
-
-set conceallevel=2
-
